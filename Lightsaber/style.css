@@ -1,3 +1,7 @@
+h1{
+    color: white;
+    text-shadow: 2px 2px 8px blue;
+}
 body{
     background-image: url("https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/space-stars-texture-sololos.jpg");
 }
@@ -45,25 +49,82 @@ body{
     z-index: -1;
 }
 .blade{
-    background-color: red;
+    background-color: blue;
     height: 20px;
+    width: 0px;
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
-    animation: ignite 2.5s;
-    box-shadow: 0px 0px 5px red;
+    box-shadow: 0px 0px 15px blue;
     margin-left: 90px;
-    margin-top: 28.5px;
+    margin-top: 12.5px;
     border-bottom-left-radius: 50px;
-    border-top-left-radius: 50px;
-    animation-fill-mode: forwards
+    border-top-left-radius: 50px; 
+    transition: all 2s ease;
 }
-@keyframes ignite{
-    from{
-        width: 0px;
-        box-shadow: 0px 0px 0px red;
-    }
-    to {
-        width: 350px;
-        box-shadow: 0px 0px 5px red;
-    }
+.blue{
+    height: 25px;
+    width: 25px;
+    background-color: blue;
+    display: inline-block;
+}
+.green{
+    height: 25px;
+    width: 25px;
+    background-color: green;
+    display: inline-block;
+}
+.yellow{
+    height: 25px;
+    width: 25px;
+    background-color: yellow;
+    display: inline-block;
+}
+.orange{
+    height: 25px;
+    width: 25px;
+    background-color: orange;
+    display: inline-block;
+}
+.red{
+    height: 25px;
+    width: 25px;
+    background-color: red;
+    display: inline-block;
+}
+.white{
+    height: 25px;
+    width: 25px;
+    background-color: white;
+    display: inline-block;
+}
+.mfk{
+    height: 25px;
+    width: 25px;
+    background-color: purple;
+    display: none;
+}
+.blue:hover{
+    box-shadow: 0px 0px 15px blue;
+}
+.green:hover{
+    box-shadow: 0px 0px 15px green;
+}
+.yellow:hover{
+    box-shadow: 0px 0px 15px yellow;
+}
+.orange:hover{
+    box-shadow: 0px 0px 15px orange;
+}
+.red:hover{
+    box-shadow: 0px 0px 15px red;
+}
+.white:hover{
+    box-shadow: 0px 0px 15px white;
+}
+.mfk:hover{
+    box-shadow: 0px 0px 15px purple;
+}
+.blade-active{
+    height: 20px;
+    width: 350px;
 }
